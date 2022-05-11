@@ -1,5 +1,8 @@
-package com.sii.ConferenceManagementApp;
+package com.sii.ConferenceManagementApp.service;
 
+import com.sii.ConferenceManagementApp.entity.CustomUserDetails;
+import com.sii.ConferenceManagementApp.entity.User;
+import com.sii.ConferenceManagementApp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
