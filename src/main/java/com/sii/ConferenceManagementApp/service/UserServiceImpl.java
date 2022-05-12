@@ -4,7 +4,6 @@ import com.sii.ConferenceManagementApp.entity.User;
 import com.sii.ConferenceManagementApp.entity.VerificationToken;
 import com.sii.ConferenceManagementApp.model.UserModel;
 import com.sii.ConferenceManagementApp.repository.UserRepository;
-import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

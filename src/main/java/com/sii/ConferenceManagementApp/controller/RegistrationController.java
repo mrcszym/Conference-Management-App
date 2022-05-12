@@ -6,7 +6,6 @@ import com.sii.ConferenceManagementApp.model.UserModel;
 import com.sii.ConferenceManagementApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,10 +21,10 @@ public class RegistrationController {
     @Autowired
     private ApplicationEventPublisher publisher;
 
-    @GetMapping("/home")
-    public String home(){
-        return "Home Page";
-    }
+//    @PostMapping("/home")
+//    public String home(){
+//        return "Home Page";
+//    }
 
     @PostMapping("/register")
     public String registerUser(@RequestBody UserModel userModel, final HttpServletRequest request) {
