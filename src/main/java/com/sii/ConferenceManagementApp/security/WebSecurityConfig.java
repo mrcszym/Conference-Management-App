@@ -29,7 +29,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private static final String[] WHITE_LIST_URLS = {
             "/",
             "/register",
+            "/lectures",
             "/registerLecture"
+    };
+
+    private static final String[] LOGGED_USER_ONLY_URLS = {
+            "/home",
+            "/logout",
+            "{lectureId}/users/{userId}"
     };
 
     @Bean
@@ -46,7 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .disable()
                 .authorizeRequests()
                 .antMatchers(WHITE_LIST_URLS).permitAll()
-                .antMatchers("/home")
+                .antMatchers(LOGGED_USER_ONLY_URLS)
                 .hasAuthority("USER")
                 .anyRequest()
                 .authenticated()

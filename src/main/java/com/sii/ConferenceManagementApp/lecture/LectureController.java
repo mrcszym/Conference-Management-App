@@ -17,8 +17,7 @@ public class LectureController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/all-lectures")
-    List<Lecture> getLectures() { return lectureRepository.findAll();}
+
 
     @PostMapping
     Lecture createLecture(@RequestBody Lecture lecture) {

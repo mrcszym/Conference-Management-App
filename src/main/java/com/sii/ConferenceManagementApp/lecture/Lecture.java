@@ -3,13 +3,9 @@ package com.sii.ConferenceManagementApp.lecture;
 import com.sii.ConferenceManagementApp.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -36,14 +32,15 @@ public class Lecture {
     private String startTime;
     private String endTime;
 
-    public Lecture(String name, String path, String startTime, String endTime) {
+    public Lecture(String name, String path, Set<User>enrolledUsers, String startTime, String endTime) {
         this.name = name;
         this.path = path;
+        this.enrolledUsers = enrolledUsers;
         this.startTime = startTime;
         this.endTime = endTime;
     }
 
-    public void enrollUser(User user) {
-        enrolledUsers.add(user);
+    public Set<User> getEnrolledUsers() {
+        return enrolledUsers;
     }
 }
