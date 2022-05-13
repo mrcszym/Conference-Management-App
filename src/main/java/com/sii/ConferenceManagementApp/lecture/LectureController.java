@@ -5,8 +5,6 @@ import com.sii.ConferenceManagementApp.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/lectures")
 public class LectureController {
@@ -16,8 +14,6 @@ public class LectureController {
 
     @Autowired
     UserRepository userRepository;
-
-
 
     @PostMapping
     Lecture createLecture(@RequestBody Lecture lecture) {

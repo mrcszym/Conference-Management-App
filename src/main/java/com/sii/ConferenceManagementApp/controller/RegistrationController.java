@@ -1,6 +1,5 @@
 package com.sii.ConferenceManagementApp.controller;
 
-import com.sii.ConferenceManagementApp.service.LectureService;
 import com.sii.ConferenceManagementApp.user.User;
 import com.sii.ConferenceManagementApp.event.RegistrationCompleted;
 import com.sii.ConferenceManagementApp.model.UserModel;
@@ -28,6 +27,7 @@ public class RegistrationController {
         publisher.publishEvent(new RegistrationCompleted(
                 user,
                 applicationUrl(request)));
+
         return "Rejestracja zakonczona sukcesem!";
     }
 

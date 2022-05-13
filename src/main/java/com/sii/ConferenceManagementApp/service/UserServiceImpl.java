@@ -1,7 +1,6 @@
 package com.sii.ConferenceManagementApp.service;
 
 import com.sii.ConferenceManagementApp.user.User;
-//import com.sii.ConferenceManagementApp.entity.VerificationToken;
 import com.sii.ConferenceManagementApp.entity.VerificationToken;
 import com.sii.ConferenceManagementApp.model.UserModel;
 import com.sii.ConferenceManagementApp.user.UserRepository;

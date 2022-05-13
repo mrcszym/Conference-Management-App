@@ -2,7 +2,6 @@ package com.sii.ConferenceManagementApp;
 
 import com.sii.ConferenceManagementApp.lecture.Lecture;
 import com.sii.ConferenceManagementApp.lecture.LectureRepository;
-import org.hibernate.mapping.Collection;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,12 +11,12 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 
 @SpringBootApplication
 public class ConferenceManagementAppApplication {
 
+	//Wykona się również CommandLineRunner, którego zadaniem jest stworzenie 9 ścieżek konferencji
 	public static void main(String[] args) {
 		SpringApplication.run(ConferenceManagementAppApplication.class, args);
 	}
