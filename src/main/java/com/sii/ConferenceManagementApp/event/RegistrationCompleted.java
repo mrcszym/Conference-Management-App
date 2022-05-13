@@ -1,6 +1,6 @@
 package com.sii.ConferenceManagementApp.event;
 
-import com.sii.ConferenceManagementApp.entity.User;
+import com.sii.ConferenceManagementApp.user.User;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.context.ApplicationEvent;

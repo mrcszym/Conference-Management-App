@@ -1,6 +1,6 @@
-package com.sii.ConferenceManagementApp.repository;
+package com.sii.ConferenceManagementApp.user;
 
-import com.sii.ConferenceManagementApp.entity.User;
+import com.sii.ConferenceManagementApp.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

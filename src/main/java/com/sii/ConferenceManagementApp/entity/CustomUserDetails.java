@@ -1,6 +1,6 @@
 package com.sii.ConferenceManagementApp.entity;
 
-import com.sii.ConferenceManagementApp.entity.User;
+import com.sii.ConferenceManagementApp.user.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,5 +1,6 @@
 package com.sii.ConferenceManagementApp.entity;
 
+import com.sii.ConferenceManagementApp.user.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -21,13 +22,10 @@ public class VerificationToken {
 
     private String token;
     private Date expirationTime;
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id", nullable = false, foreignKey = @ForeignKey(name = "FK_USER_VERIFY_TOKEN"))
-    private User user;
 
     public VerificationToken(User user, String token) {
         this.token = token;
-        this.user = user;
+//        this.user = user;
         this.expirationTime = calculateExpirationDate(EXPIRATION_TIME);
     }
 
