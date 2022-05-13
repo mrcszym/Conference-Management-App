@@ -23,4 +23,5 @@ Ważne adresy url:
 Zdaję sobię sprawę z niedopracowania aplikacji, zamierzam ją dokończyć w najbliższym wolnym czasie, niezależnie od wyników rekrutacji.
 Informacje o wersjach i bazie danych znajdują się w pom.xml i /src/main/java/com.sii.ConferenceManagementApp/resources/application.properties.
 
+Przykładowy wynik wyświetlenia danych pewnej ścieżki konferencji:
 ![image](https://user-images.githubusercontent.com/81679054/168327887-aa27e0eb-47de-4fdf-bf9f-abed0bc6447a.png)
