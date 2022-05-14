@@ -4,7 +4,7 @@ Aplikacja (wyłącznie backend) dla strony do obsługi konferencji z 9 ścieżka
 Do startu należy uruchomić /src/main/java/com.sii.ConferenceManagementApp/ConferenceManagementAppApplication.
 
 Działanie aplikacji testowałem w Postman.
-Korzystałem z MySQL Workbench.
+Korzystałem z MySQL Workbench i niestety zapomniałem że baza powinna być in-memory. Do poprawnego działania aplikacji trzeba stworzyć bazę 'conferencedb' na localhoście 3305, lub zmienić ustawienia w /resources/application.properties.
 
 Ważne adresy url:
 - strona głowna -> GET "localhost:8080/"
@@ -21,7 +21,7 @@ Ważne adresy url:
 - istnieje możliwość stworzenia nowej ścieżki
 
 Zdaję sobię sprawę z niedopracowania aplikacji, zamierzam ją dokończyć w najbliższym wolnym czasie, niezależnie od wyników rekrutacji.
-Informacje o wersjach i bazie danych znajdują się w pom.xml i /src/main/java/com.sii.ConferenceManagementApp/resources/application.properties.
+Informacje o wersjach i bazie danych znajdują się w pom.xml i /resources/application.properties.
 
 Przykładowy wynik wyświetlenia danych pewnej ścieżki konferencji:
 ![image](https://user-images.githubusercontent.com/81679054/168327887-aa27e0eb-47de-4fdf-bf9f-abed0bc6447a.png)
